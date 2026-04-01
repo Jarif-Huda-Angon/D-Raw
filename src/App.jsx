@@ -14,6 +14,7 @@ import {
   Zap,
   XOctagon
 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react'; // <-- Analytics Import Added
 
 export default function App() {
   const [email, setEmail] = useState('');
@@ -276,6 +277,9 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {/* Vercel Analytics Tag Added Here */}
+      <Analytics />
     </div>
   );
 }
